@@ -339,11 +339,12 @@
     .gallery-grid .wide { grid-column: span 2; }
     .g-item {
       border-radius: var(--r); overflow: hidden;
-      box-shadow: var(--sh); background: #111;
+      box-shadow: var(--sh); background: #e8f0e9;
       transition: transform .28s;
     }
     .g-item:hover { transform: scale(1.022); }
-    .g-item img { width: 100%; height: auto; display: block; object-fit: contain; }
+    .g-item img { width: 100%; height: 280px; display: block; object-fit: cover; object-position: center; }
+    .g-item.wide img { height: 320px; }
 
     /* ====== CONTACTS ====== */
     #contacts { background: var(--green); color: #fff; }
@@ -474,24 +475,20 @@
     <!-- Logo + Halal SVG badge -->
     <div class="logo">
       <!-- Halal SVG logo — как на баннере: зелёный круг с быком и надписью ХАЛЯЛЬ -->
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Халяль">
-        <circle cx="20" cy="20" r="19" fill="#1a4a28" stroke="#f5c518" stroke-width="1.8"/>
-        <circle cx="20" cy="20" r="15.5" fill="none" stroke="#f5c518" stroke-width="0.8" stroke-dasharray="2 2"/>
-        <!-- Bull silhouette simplified -->
-        <ellipse cx="20" cy="22" rx="7" ry="4.5" fill="#f5c518"/>
-        <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#f5c518"/>
-        <!-- horns -->
-        <path d="M16 16 Q13 12 15 10" stroke="#f5c518" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-        <path d="M24 16 Q27 12 25 10" stroke="#f5c518" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-        <!-- legs -->
-        <rect x="15" y="25.5" width="2" height="4" rx="1" fill="#f5c518"/>
-        <rect x="18.5" y="25.5" width="2" height="4" rx="1" fill="#f5c518"/>
-        <rect x="22" y="25.5" width="2" height="4.5" rx="1" fill="#f5c518"/>
-        <!-- Halal text arc top -->
-        <text x="20" y="8" text-anchor="middle" fill="#f5c518" font-size="3.8" font-weight="bold" font-family="Arial">ХАЛЯЛЬ</text>
-        <!-- Arabic bottom -->
-        <text x="20" y="37.5" text-anchor="middle" fill="#f5c518" font-size="3.2" font-family="Arial">حلال</text>
-      </svg>
+      <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Халяль">
+  <circle cx="50" cy="50" r="48" fill="#1d6b38"/>
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="50" cy="50" r="41" fill="none" stroke="#fff" stroke-width="1"/>
+  <!-- crescent -->
+  <circle cx="50" cy="42" r="18" fill="#fff"/>
+  <circle cx="57" cy="36" r="15" fill="#1d6b38"/>
+  <!-- star 5pt -->
+  <polygon points="50,22 51.8,27.5 57.5,27.5 52.9,30.8 54.7,36.3 50,33 45.3,36.3 47.1,30.8 42.5,27.5 48.2,27.5" fill="#fff"/>
+  <!-- ХАЛЯЛЬ -->
+  <text x="50" y="68" text-anchor="middle" fill="#fff" font-size="13" font-weight="900" font-family="Arial,sans-serif" letter-spacing="1">ХАЛЯЛЬ</text>
+  <!-- حلال -->
+  <text x="50" y="83" text-anchor="middle" fill="#fff" font-size="11" font-family="Arial,sans-serif">&#x62D;&#x644;&#x627;&#x644;</text>
+</svg>
       <span>Акулово</span>
     </div>
 
@@ -519,19 +516,20 @@
 
     <!-- Halal badge block -->
     <div class="hero-halal-block">
-      <svg width="52" height="52" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="19" fill="#1a4a28" stroke="#f5c518" stroke-width="2"/>
-        <circle cx="20" cy="20" r="15.5" fill="none" stroke="#f5c518" stroke-width="0.8" stroke-dasharray="2 2"/>
-        <ellipse cx="20" cy="22" rx="7" ry="4.5" fill="#f5c518"/>
-        <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#f5c518"/>
-        <path d="M16 16 Q13 12 15 10" stroke="#f5c518" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-        <path d="M24 16 Q27 12 25 10" stroke="#f5c518" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-        <rect x="15" y="25.5" width="2" height="4" rx="1" fill="#f5c518"/>
-        <rect x="18.5" y="25.5" width="2" height="4" rx="1" fill="#f5c518"/>
-        <rect x="22" y="25.5" width="2" height="4.5" rx="1" fill="#f5c518"/>
-        <text x="20" y="8" text-anchor="middle" fill="#f5c518" font-size="3.8" font-weight="bold" font-family="Arial">ХАЛЯЛЬ</text>
-        <text x="20" y="37.5" text-anchor="middle" fill="#f5c518" font-size="3.2" font-family="Arial">حلال</text>
-      </svg>
+      <svg width="52" height="52" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Халяль">
+  <circle cx="50" cy="50" r="48" fill="#1d6b38"/>
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="50" cy="50" r="41" fill="none" stroke="#fff" stroke-width="1"/>
+  <!-- crescent -->
+  <circle cx="50" cy="42" r="18" fill="#fff"/>
+  <circle cx="57" cy="36" r="15" fill="#1d6b38"/>
+  <!-- star 5pt -->
+  <polygon points="50,22 51.8,27.5 57.5,27.5 52.9,30.8 54.7,36.3 50,33 45.3,36.3 47.1,30.8 42.5,27.5 48.2,27.5" fill="#fff"/>
+  <!-- ХАЛЯЛЬ -->
+  <text x="50" y="68" text-anchor="middle" fill="#fff" font-size="13" font-weight="900" font-family="Arial,sans-serif" letter-spacing="1">ХАЛЯЛЬ</text>
+  <!-- حلال -->
+  <text x="50" y="83" text-anchor="middle" fill="#fff" font-size="11" font-family="Arial,sans-serif">&#x62D;&#x644;&#x627;&#x644;</text>
+</svg>
       <div>
         <div class="htxt">Продукция Халяль</div>
         <div class="hsub">Деревня Акулово, Кубинка</div>
@@ -591,19 +589,20 @@
     </div>
     <div class="kurban-text">
       <div style="margin-bottom:16px">
-        <svg width="64" height="64" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="19" fill="#1a4a28" stroke="#f5c518" stroke-width="2"/>
-          <circle cx="20" cy="20" r="15.5" fill="none" stroke="#f5c518" stroke-width="0.8" stroke-dasharray="2 2"/>
-          <ellipse cx="20" cy="22" rx="7" ry="4.5" fill="#f5c518"/>
-          <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#f5c518"/>
-          <path d="M16 16 Q13 12 15 10" stroke="#f5c518" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          <path d="M24 16 Q27 12 25 10" stroke="#f5c518" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          <rect x="15" y="25.5" width="2" height="4" rx="1" fill="#f5c518"/>
-          <rect x="18.5" y="25.5" width="2" height="4" rx="1" fill="#f5c518"/>
-          <rect x="22" y="25.5" width="2" height="4.5" rx="1" fill="#f5c518"/>
-          <text x="20" y="8" text-anchor="middle" fill="#f5c518" font-size="3.8" font-weight="bold" font-family="Arial">ХАЛЯЛЬ</text>
-          <text x="20" y="37.5" text-anchor="middle" fill="#f5c518" font-size="3.2" font-family="Arial">حلال</text>
-        </svg>
+        <svg width="64" height="64" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Халяль">
+  <circle cx="50" cy="50" r="48" fill="#1d6b38"/>
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="50" cy="50" r="41" fill="none" stroke="#fff" stroke-width="1"/>
+  <!-- crescent -->
+  <circle cx="50" cy="42" r="18" fill="#fff"/>
+  <circle cx="57" cy="36" r="15" fill="#1d6b38"/>
+  <!-- star 5pt -->
+  <polygon points="50,22 51.8,27.5 57.5,27.5 52.9,30.8 54.7,36.3 50,33 45.3,36.3 47.1,30.8 42.5,27.5 48.2,27.5" fill="#fff"/>
+  <!-- ХАЛЯЛЬ -->
+  <text x="50" y="68" text-anchor="middle" fill="#fff" font-size="13" font-weight="900" font-family="Arial,sans-serif" letter-spacing="1">ХАЛЯЛЬ</text>
+  <!-- حلال -->
+  <text x="50" y="83" text-anchor="middle" fill="#fff" font-size="11" font-family="Arial,sans-serif">&#x62D;&#x644;&#x627;&#x644;</text>
+</svg>
       </div>
       <h2>Бараны на<br>Курбан-байрам 2026</h2>
       <p>
@@ -844,19 +843,20 @@
 <!-- =================== FOOTER =================== -->
 <footer>
   <div style="margin-bottom:12px">
-    <svg width="48" height="48" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:10px">
-      <circle cx="20" cy="20" r="19" fill="#1a4a28" stroke="#f5c518" stroke-width="2"/>
-      <circle cx="20" cy="20" r="15.5" fill="none" stroke="#f5c518" stroke-width="0.8" stroke-dasharray="2 2"/>
-      <ellipse cx="20" cy="22" rx="7" ry="4.5" fill="#f5c518"/>
-      <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#f5c518"/>
-      <path d="M16 16 Q13 12 15 10" stroke="#f5c518" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-      <path d="M24 16 Q27 12 25 10" stroke="#f5c518" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-      <rect x="15" y="25.5" width="2" height="4" rx="1" fill="#f5c518"/>
-      <rect x="18.5" y="25.5" width="2" height="4" rx="1" fill="#f5c518"/>
-      <rect x="22" y="25.5" width="2" height="4.5" rx="1" fill="#f5c518"/>
-      <text x="20" y="8" text-anchor="middle" fill="#f5c518" font-size="3.8" font-weight="bold" font-family="Arial">ХАЛЯЛЬ</text>
-      <text x="20" y="37.5" text-anchor="middle" fill="#f5c518" font-size="3.2" font-family="Arial">حلال</text>
-    </svg>
+    <svg width="48" height="48" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Халяль">
+  <circle cx="50" cy="50" r="48" fill="#1d6b38"/>
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="50" cy="50" r="41" fill="none" stroke="#fff" stroke-width="1"/>
+  <!-- crescent -->
+  <circle cx="50" cy="42" r="18" fill="#fff"/>
+  <circle cx="57" cy="36" r="15" fill="#1d6b38"/>
+  <!-- star 5pt -->
+  <polygon points="50,22 51.8,27.5 57.5,27.5 52.9,30.8 54.7,36.3 50,33 45.3,36.3 47.1,30.8 42.5,27.5 48.2,27.5" fill="#fff"/>
+  <!-- ХАЛЯЛЬ -->
+  <text x="50" y="68" text-anchor="middle" fill="#fff" font-size="13" font-weight="900" font-family="Arial,sans-serif" letter-spacing="1">ХАЛЯЛЬ</text>
+  <!-- حلال -->
+  <text x="50" y="83" text-anchor="middle" fill="#fff" font-size="11" font-family="Arial,sans-serif">&#x62D;&#x644;&#x627;&#x644;</text>
+</svg>
     <strong>Акулово Халяль</strong> — Живой скот и домашнее молоко
   </div>
   <p>Деревня Акулово, Кубинка 10, Московская область</p>
