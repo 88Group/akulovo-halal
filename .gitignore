@@ -1,3 +1,7 @@
 # Keep originals locally, don't push heavy backups
 Shared/*_original.jpeg
 .claude/
+
+# Node
+node_modules/
+package-lock.json

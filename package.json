@@ -1,0 +1,25 @@
+{
+  "name": "nazar-meat",
+  "version": "1.0.0",
+  "description": "Сайт фермы живого скота Халяль — деревня Акулово, Кубинка. Бараны на Курбан-байрам, козы, быки, коровы, домашнее молоко.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/88Group/akulovo-halal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/88Group/akulovo-halal/issues"
+  },
+  "homepage": "https://github.com/88Group/akulovo-halal#readme",
+  "dependencies": {
+    "puppeteer": "^24.40.0",
+    "qrcode": "^1.5.4"
+  }
+}
